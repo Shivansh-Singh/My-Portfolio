@@ -1,41 +1,66 @@
 import Image from "next/image";
+import HowICanHelp from "./components/HowICanHelp";
 
 export default function Page() {
   return (
-    <section className="text-center">
-      {/* Profile Image */}
-      <div className="mb-3 -mt-8">
-        <Image
-          src="/profile.jpeg"
-          alt="Profile photo"
-          className="rounded-full bg-gray-100 mx-auto"
-          unoptimized
-          width={240}
-          height={200}
-          priority
-        />
-      </div>
+    <div className="flex flex-col min-h-screen">
+      {/* Main content */}
+      <main className="flex-grow py-4">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 p-5 max-w-4xl w-full mx-auto">
+          <section className="text-center">
+            {/* Profile Image */}
+            <div className="mx-auto w-60 h-60 relative overflow-hidden">
+              <div className="absolute inset-0 m-auto" style={{
+                clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
+              }}>
+                <Image
+                  src="/shivansh.jpg"
+                  alt="Profile photo"
+                  className="object-cover"
+                  unoptimized
+                  fill
+                  priority
+                />
+              </div>
+            </div>
 
-      {/* Name and Title */}
-      <h2 className="text-xl font-medium text-gray-400 mb-2">
-        Graduate Student | Duke University
-      </h2>
+            {/* Name and Title */}
+            <h2 className="text-xl font-medium text-gray-400 mb-1">
+              Graduate Student | Duke University
+            </h2>
 
-      {/* Program & Field */}
-      <h3 className="text-lg font-light text-gray-400 mb-4">
-        Artificial Intelligence
-      </h3>
+            {/* Program & Field */}
+            <h3 className="text-lg font-light text-gray-400 mb-3">
+              Engineering Management
+            </h3>
 
-      {/* Profile Description */}
-      <div className="prose prose-neutral dark:prose-invert mx-auto">
-        <p>A builder at heart, passionate about transforming ideas into impactful realities.</p>
-        <p>
-          Hey! I’m <strong>Sakshee</strong>, an AI Engineer with 2+ years building Generative AI solutions at Deloitte, specializing in multi-agent LLM systems and RAG. Currently pursuing my master’s in{" "}
-          <a href="https://ai.meng.duke.edu/degree" target="_blank" className="text-blue-600 hover:underline">
-            AI
-          </a> at Duke, with a focus on Explainable AI for interpretable systems.
-        </p>
-      </div>
-    </section>
+            {/* Profile Description */}
+            <div className="prose prose-neutral dark:prose-invert max-w-xl mx-auto">
+              <p className="italic text-center mb-3">
+                Curiosity finds structure, and empathy gives it purpose.
+              </p>
+
+              <div className="text-left space-y-4">
+                <p>
+                Hi, I'm <strong>Shivansh</strong>, a builder of products, teams, and ideas. 
+                With a foundation in engineering and experience across strategy, innovation, and leadership, 
+                my approach is cross-functional by design: rooted in engineering, shaped by business, and driven by impact.
+                </p>
+                <p>
+                  I'm currently pursuing my master's in{" "}
+                  <a href="https://ai.meng.duke.edu/degree" target="_blank" className="text-blue-600 hover:underline">
+                    Engineering Management
+                  </a>{" "}
+                  at Duke, with a focus on Product Management, Innovation, and Entrepreneurship.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        {/* How I Can Help Section */}
+        <HowICanHelp />
+      </main>
+    </div>
   );
 }

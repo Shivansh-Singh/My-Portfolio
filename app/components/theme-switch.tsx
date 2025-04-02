@@ -11,7 +11,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return (
     <NextThemesProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="light" // changed from "system" to "light"
       enableSystem
       {...props}
     >
@@ -19,6 +19,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
     </NextThemesProvider>
   );
 }
+
 
 export const ThemeSwitch: React.FC = () => {
   const { setTheme } = useTheme();
@@ -31,10 +32,11 @@ export const ThemeSwitch: React.FC = () => {
       if (storedPreference) {
         return storedPreference as 'light' | 'dark';
       }
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      return 'light'; // default to light regardless of system
     }
-    return 'light'; 
+    return 'light';
   };
+  
 
   const reflectPreference = (theme: 'light' | 'dark') => {
     document.documentElement.classList.remove('bg-light', 'bg-dark');

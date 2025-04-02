@@ -1,6 +1,6 @@
 export const metaData = {
   baseUrl: "https://nextfolio-template.vercel.app/",
-  title: "Sakshee Patil",
+  title: "Shivansh Singh",
   name: "Sirius",
   ogImage: "/opengraph-image.png",
   description:
@@ -8,7 +8,6 @@ export const metaData = {
 };
 
 export const socialLinks = {
-  github: "https://github.com/Sakshee5",
-  linkedin: "https://www.linkedin.com/in/sakshee-patil-5072b51b5/",
-  email: "saksheepatil05@gmail.com",
+  linkedin: "https://www.linkedin.com/in/shivansh-singh10/",
+  email: "shivansh.singh@duke.edu",
 };
