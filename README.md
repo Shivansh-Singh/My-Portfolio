@@ -1,4 +1,4 @@
-# Sakshee's Personal Portfolio
+# Shivansh's Personal Portfolio
 
 Hi there! Welcome to my personal portfolio repository.
 
