@@ -6,7 +6,7 @@ const navItems = {
   "/edu": { name: "Education" },
   "/work-ex": { name: "Work" },
   "/projects": { name: "Projects" },
-  "/blog": { name: "Blog" },
+  "/leadership": { name: "Leadership" },
   "/photos": { name: "Photos" },
 };
 
@@ -24,7 +24,7 @@ export function Navbar() {
             <Link
               key={path}
               href={path}
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
+              className="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 font-medium shadow-sm hover:shadow-md"
             >
               {name}
             </Link>

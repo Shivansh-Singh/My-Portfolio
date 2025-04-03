@@ -8,19 +8,52 @@ export default function Page() {
       <main className="flex-grow py-4">
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 p-5 max-w-4xl w-full mx-auto">
           <section className="text-center">
-            {/* Profile Image */}
-            <div className="mx-auto w-60 h-60 relative overflow-hidden">
-              <div className="absolute inset-0 m-auto" style={{
-                clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
-              }}>
+            {/* Profile Image and Logos Container */}
+            <div className="flex items-center justify-center gap-8 mb-6">
+              {/* Duke Logo */}
+              <div className="relative w-24 h-24">
                 <Image
-                  src="/shivansh.jpg"
-                  alt="Profile photo"
-                  className="object-cover"
-                  unoptimized
+                  src="/logos/duke.png"
+                  alt="Duke University Logo"
                   fill
-                  priority
+                  className="object-contain dark:invert"
                 />
+              </div>
+
+              {/* Profile Image */}
+              <div className="w-60 h-60 relative overflow-hidden">
+                <div className="absolute inset-0 m-auto" style={{
+                  clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
+                }}>
+                  <Image
+                    src="/shivansh.jpg"
+                    alt="Profile photo"
+                    className="object-cover"
+                    unoptimized
+                    fill
+                    priority
+                  />
+                </div>
+              </div>
+
+              {/* Deloitte and IIT Logos */}
+              <div className="flex flex-col gap-4">
+                <div className="relative w-24 h-24">
+                  <Image
+                    src="/logos/deloitte.png"
+                    alt="Deloitte Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="relative w-24 h-24">
+                  <Image
+                    src="/logos/iit.png"
+                    alt="IIT Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
             </div>
 
@@ -37,7 +70,7 @@ export default function Page() {
             {/* Profile Description */}
             <div className="prose prose-neutral dark:prose-invert max-w-xl mx-auto">
               <p className="italic text-center mb-3">
-                Curiosity finds structure, and empathy gives it purpose.
+                Curiosity finds structure and empathy gives it purpose.
               </p>
 
               <div className="text-left space-y-4">

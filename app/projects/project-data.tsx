@@ -1,120 +1,66 @@
 // project-data.ts
-export interface Project {
-  title: string;
-  year: number;
-  description?: string;
-  image: string;
-  url: string;
-  bulletPoints: string[];
-  tags: string[];
-}
+export const researchProjects = [
+  {
+    title: "Utilization & Management of E-Waste",
+    subtitle: "B.Tech Thesis | IIT Indore | Jan 2022 - May 2022",
+    image: "/projects/e-waste.jpg",
+    bulletPoints: [
+      "Built an end-to-end system for recovering valuable metals from Li-ion battery waste using computer vision and eco-friendly hydrometallurgy",
+      "Engineered a CNN-based model for Li-ion battery type and size classification",
+      "Designed a hydrometallurgical process for extracting Lithium and Cobalt",
+      "Developed a basic profitability model for e-waste collection centers",
+      "Received a perfect score and faculty commendation"
+    ],
+    tags: ["Computer Vision", "Deep Learning", "Sustainability", "Research"]
+  },
+  {
+    title: "Research Intern - Organisational Behavior",
+    subtitle: "National University of Singapore | May 2021 – Oct 2021",
+    image: "/projects/nus-research.jpg",
+    bulletPoints: [
+      "Implemented a sentiment analysis model in R on a custom Brexit-related dataset and quantified emotional undertones in political discourse",
+      "Curated a research dataset on the effects of COVID-19 messaging on public behavior",
+      "Conducted a literature review on the Sunk-Cost Fallacy and prosocial decision-making"
+    ],
+    tags: ["NLP", "Sentiment Analysis", "Behavioral Psychology", "Research"]
+  }
+];
 
-export const projects: Project[] = [
+export const communityProjects = [
   {
-    title: "Art Meets AI: Neural Style Transfer with Interactive Visualizations",
-    year: 2024,
-    image: "/projects/style-transfer.png",
-    url: "https://github.com/Sakshee5/XAI-style-transfer",
+    title: "Parivartan Sandesh NGO – COVID-19 Relief & Education Projects",
+    subtitle: "Volunteer | Bhopal, India | May 2020 – Sept 2020",
+    image: "/projects/parivartan.jpg",
+    certificate: {
+      text: "View Certificate",
+      link: "https://drive.google.com/drive/folders/1TZ0wxxlSyGIBcz22mM5cargG2YA0S5js"
+    },
     bulletPoints: [
-      "Built and deployed a web application that visualizes Neural Style Transfer (NST) in real-time.",
-      "Enhanced interpretability by integrating explainability techniques (XAI) like Feature maps, Gram-matrix and Grad-CAM visualization.",
+      "Contributed over 300 volunteer hours to relief and rehabilitation initiatives during the COVID-19 pandemic",
+      "Created awareness posters and pamphlets on COVID-19 for slum communities",
+      "Helped distribute home-made sanitizers and masks to underprivileged populations",
+      "Supported 'Feed the Hunger' initiative, aiding migrant workers returning to villages in MP",
+      "Collected and distributed clothing and footwear to displaced families",
+      "Taught basic Math, English, and Moral Science to schoolchildren from low-income families",
+      "Led local cleanliness and education awareness drives (Right to Education, Think Green)",
+      "Assisted in job placement for pandemic-affected youth"
     ],
-    tags: ["XAI", "Neural Style Transfer", "Web Application", "Interactive Visualization"]
+    tags: ["Community Service", "Education", "COVID-19 Relief", "Leadership"]
   },
   {
-    title: "Alphanumeric Audio Dataset Collection",
-    year: 2024,
-    image: "/projects/dataset-collection.png",
-    url: "https://huggingface.co/datasets/sakshee05/alphanumeric-audio-dataset",
+    title: "WWF India – Volunteer, Education & Research Division",
+    subtitle: "Volunteer | Remote | Jun 2021 – Aug 2021",
+    image: "/projects/wwf.jpg",
+    certificate: {
+      text: "View Certificate",
+      link: "https://drive.google.com/drive/folders/1TZ0wxxlSyGIBcz22mM5cargG2YA0S5js"
+    },
     bulletPoints: [
-      "Completed data collection process from IRB approval to open-source release on HuggingFace.",
-      "Collected over 500 audio samples along with demographic metadata.",
-      "Ensured ethical standards with anonymization and open-sourced the dataset to promote inclusivity."
+      "Worked with WWF-India's education, marketing, and research teams to support environment-focused initiatives",
+      "Assisted in campaign content creation for school outreach programs",
+      "Supported data collection and analysis for conservation-focused educational research",
+      "Helped develop marketing material for WWF India courses"
     ],
-    tags: ["Speech Recognition", "Dataset Collection", "AI Fairness", "Open Source"]
-  },
-  {
-    title: "Unsupervised Segmentation of Peck-damaged Rice Grains",
-    year: 2022,
-    image: "/projects/rice-grain.png",
-    url: "https://github.com/Sakshee5/Rice-Grain-Quality-Inspection-/tree/main",
-    bulletPoints: [
-      "Developed an unsupervised CNN-based segmentation algorithm.",
-      "Achieved 92.54 Dice coefficient accuracy in segmenting peck-damaged rice grains.",
-      "Earned the highest grade for conducting research in a novel field."
-    ],
-    tags: ["Image Segmentation", "CNN", "Agriculture", "Research"]
-  },
-  {
-    title: "Design and Vision-based Control of Miniature Rolling Capsule",
-    year: 2021,
-    image: "/projects/steel-defect.png",
-    url: "https://github.com/Sakshee5/Steel-Defect-Detection",
-    bulletPoints: [
-      "Designed a miniature rolling capsule with a CCD camera for pipe inspection.",
-      "Developed a U-net model for detecting defects on steel surfaces with high accuracy.",
-      "Achieved a 2% improvement over baseline results on steel defect detection dataset."
-    ],
-    tags: ["Computer Vision", "Robotics", "Pipe Inspection", "U-net"]
-  },
-  {
-    title: "Prognostics and Health Management - Data Challenge",
-    year: 2021,
-    image: "/projects/time-series.jpg",
-    url: "https://github.com/Sakshee5/PHM--RUL-Prediction-Challenge",
-    bulletPoints: [
-      "Predicted Remaining Useful Life (RUL) in a fleet of aircraft engines with multiple failure modes.",
-      "Used ragged tensors with CNN and RNN-based models for time series prediction.",
-      "Learned LSTMs, GRUs, Bi-directional LSTMs, and Attention models for time series data."
-    ],
-    tags: ["PHM", "Time Series", "RNN", "Aerospace"]
-  },
-  {
-    title: "Bosch’s Traffic Sign Recognition | Inter IIT",
-    year: 2021,
-    image: "/projects/traffic-sign.jpg",
-    url: "https://github.com/Sakshee5/traffic_sign_recognition",
-    bulletPoints: [
-      "Developed the backend of a customizable CNN architecture for traffic sign recognition.",
-      "Built baseline model for GTSRB dataset with 43 traffic sign classes.",
-      "Learned data augmentation, CNN layers, hyperparameters, and UI design."
-    ],
-    tags: ["Traffic Sign Recognition", "CNN", "Computer Vision", "Inter IIT"]
-  },
-  {
-    title: "Heart Rate Estimation from Non-contact Face Videos Using Deep Learning",
-    year: 2020,
-    image: "/projects/deep-learning.png",
-    url: "https://github.com/Sakshee5",
-    bulletPoints: [
-      "Extracted facial landmarks and temporal signals to differentiate between authentic and spoof videos.",
-      "Used OpenFace library and learned basics of MATLAB.",
-      "Worked with non-contact face video data for heart rate estimation."
-    ],
-    tags: ["Deep Learning", "Healthcare", "Facial Recognition", "MATLAB"]
-  },
-  {
-    title: "OpenCV Self Projects",
-    year: 2020,
-    image: "/projects/cv.jpeg",
-    url: "https://github.com/Sakshee5",
-    bulletPoints: [
-      "Real-time attendance monitoring with face detection.",
-      "Virtual painting with webcam and document scanner.",
-      "Augmented reality with ORB feature matching and Aruco markers."
-    ],
-    tags: ["OpenCV", "Augmented Reality", "Face Detection", "Computer Vision"]
-  },
-  {
-    title: "Renewable Energy Forecasting for a Smart Grid | Smart India Hackathon",
-    year: 2020,
-    image: "/projects/sih.png",
-    url: "https://github.com/Sakshee5/Renewable-Energy-Forecasting-for-Integrated-Smart-Grid",
-    bulletPoints: [
-      "Developed a scheduling system for a simulated microgrid controller.",
-      "Built a multivariate time-series forecasting model for renewable energy prediction.",
-      "Gained experience with RNNs and convex optimization algorithms."
-    ],
-    tags: ["Renewable Energy", "Smart Grid", "Time Series", "Hackathon"]
+    tags: ["Environmental Conservation", "Education", "Research", "Volunteering"]
   }
 ];

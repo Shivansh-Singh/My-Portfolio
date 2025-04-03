@@ -24,7 +24,7 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
     <section>
       <div className={`grid ${gridClass} gap-4 my-8`}>
         {images.map((image, index) => (
-          <div key={index} className="relative aspect-square">
+          <div key={index} className="relative aspect-square overflow-hidden rounded-lg">
             {image.href ? (
               <a
                 target="_blank"
@@ -38,7 +38,7 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                   fill
                   sizes="(max-width: 768px) 50vw, 33vw"
                   priority
-                  className="rounded-lg object-cover"
+                  className="object-contain bg-neutral-100 dark:bg-neutral-800"
                 />
               </a>
             ) : (
@@ -48,7 +48,7 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 priority
-                className="rounded-lg object-cover"
+                className="object-contain bg-neutral-100 dark:bg-neutral-800"
               />
             )}
           </div>

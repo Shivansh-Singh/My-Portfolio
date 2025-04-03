@@ -11,14 +11,14 @@ interface ServiceSection {
 
 const services: ServiceSection[] = [
   {
-    title: "Product Vision & Strategy",
-    description: "I help shape product foundations from architecture and value proposition to go-to-market strategy, sales channels, and feature roadmaps. I have also designed financial models, and product performance metrics to guide data driven decision-making.",
-    experience: "At Bern, I led product strategy for an AI-powered educational companion, defining product architecture, sales pathways, beta testing and early customer acquisition (first 20 pre-orders, aimming to achieve 100 within 3 months ). At Jobz, a recruitment platform, I identified 12+ user pain points and crafted the product feature roadmap for painpoint resolution through user journey mapping and storyboarding."
+    title: "User Insight & Lean/Continuous Discovery",
+    description: "I drive user-first product development by leading customer discovery, empathy mapping, journey design, and product testing ensuring solutions are grounded in real needs, not assumptions.",
+    experience: "At Bern (a smart educational companion for children), I drove development of the first prototype through hands-on customer discovery and testing, defined Ideal Customer Profiles (ICPs), and set key product performance metrics for beta success. I also co-developed a diagnostic med-tech device with a Duke inventor, guiding itterative prototyping through stakeholder interviews and clinical workflow design."
   },
   {
-    title: "User Insight & Lean Discovery",
-    description: "I drive user-first product development by leading customer discovery, empathy mapping, journey design, and product testing ensuring solutions are grounded in real needs, not assumptions.",
-    experience: "At Bern, I drove development of the first prototype through hands-on customer discovery and testing, defined Ideal Customer Profiles (ICPs), and set key product performance metrics for beta success. I also co-developed a diagnostic med-tech device with a Duke inventor, guiding itterative prototyping through stakeholder interviews and clinical workflow design."
+    title: "Product Vision & Strategy",
+    description: "I help shape product foundations from architecture and value proposition to go-to-market strategy, sales channels, and feature roadmaps. I have also designed financial models, and product performance metrics to guide data driven decision-making.",
+    experience: "At Bern, I led core aspects of product development including product strategy and architecture. I outlined possible sales channels, beta testing plan and drove early traction, securing the first 20 pre-orders with a goal of reaching 100 within 3 months. At Jobz, an AI-powered recruitment platform, I identified 12+ user pain points and translated insights into a feature roadmap through user journey mapping and storyboarding."
   },
   {
     title: "Business & Risk Analysis",
