@@ -13,10 +13,9 @@ export default function Page() {
               {/* Duke Logo */}
               <div className="relative w-24 h-24">
                 <Image
-                  src="/logos/duke.png"
+                  src="/logos/duke.jpg"
                   alt="Duke University Logo"
                   fill
-                  className="object-contain dark:invert"
                 />
               </div>
 
@@ -40,7 +39,7 @@ export default function Page() {
               <div className="flex flex-col gap-4">
                 <div className="relative w-24 h-24">
                   <Image
-                    src="/logos/deloitte.png"
+                    src="/logos/deloitte.jpg"
                     alt="Deloitte Logo"
                     fill
                     className="object-contain"
@@ -48,7 +47,7 @@ export default function Page() {
                 </div>
                 <div className="relative w-24 h-24">
                   <Image
-                    src="/logos/iit.png"
+                    src="/logos/iit.jpg"
                     alt="IIT Logo"
                     fill
                     className="object-contain"
