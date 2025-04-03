@@ -142,7 +142,17 @@ const timelineItems = [
       "Automated risk indicators with SAP; enhanced monitoring by 40%",
       "Built Power BI dashboards; improved executive decision-making",
       "Trained 60+ senior leaders on risk frameworks; improved governance and risk awareness by 55%",
-      "Recognized with 3 performance awards for innovation and impact; top 5% of performers"
+      <>
+        Recognized with 3 performance awards for innovation and impact; top 5% of performers{" "}
+        <a
+          href="https://drive.google.com/drive/folders/1eljQU1HKO9bE5h6syPdEqVA3-MmYMrtj"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+        >
+          🔗
+        </a>
+      </>
     ],
     images: [
       {
