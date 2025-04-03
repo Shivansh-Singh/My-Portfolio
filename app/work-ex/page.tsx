@@ -158,7 +158,7 @@ const timelineItems = [
       {
         src: "/work/deloitte-1.jpg",
         alt: "ERM Dashboard",
-        caption: "Client Meeting"
+        caption: "Client Location"
       },
       {
         src: "/work/deloitte-2.jpg",
