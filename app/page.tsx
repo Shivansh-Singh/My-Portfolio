@@ -39,7 +39,7 @@ export default function Page() {
               <div className="flex flex-col gap-4">
                 <div className="relative w-24 h-24">
                   <Image
-                    src="/logos/deloitte.jpg"
+                    src="/logos/deloitte-1.jpg"
                     alt="Deloitte Logo"
                     fill
                     className="object-contain"
