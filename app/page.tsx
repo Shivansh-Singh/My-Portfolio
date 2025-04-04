@@ -73,7 +73,7 @@ export default function Page() {
               <div className="text-left space-y-4">
                 <p>
                 Hi, I'm <strong>Shivansh</strong>, a builder of products, teams, and ideas. 
-                With a foundation in engineering and experience across Product, strategy and innovation,  
+                With a foundation in engineering and experience across product, strategy and innovation,  
                 my approach is cross-functional by design: rooted in engineering, shaped by business, and driven by impact.
                 </p>
                 <p>
