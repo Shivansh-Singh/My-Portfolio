@@ -20,7 +20,7 @@ export default function Page() {
               </div>
 
               {/* Profile Image */}
-              <div className="w-60 h-60 relative overflow-hidden rounded-full">
+                <div className="w-60 h-60 relative overflow-hidden rounded-full">
                 <div className="absolute inset-0 m-auto">
                   <Image
                     src="/shivansh.jpg"
@@ -79,7 +79,7 @@ export default function Page() {
                 <p>
                   I'm currently pursuing my master's in{" "}
                   <a href="https://masters.pratt.duke.edu/management/overview/" target="_blank" className="text-blue-600 hover:underline">
-                    Engineering Management
+                    <span className="text-blue-600">Engineering Management</span>
                   </a>{" "}
                   at Duke, with a focus on Product Management, Innovation, and Entrepreneurship.
                 </p>
