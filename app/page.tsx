@@ -80,7 +80,7 @@ export default function Page() {
                 </p>
                 <p>
                   I'm currently pursuing my master's in{" "}
-                  <a href="https://ai.meng.duke.edu/degree" target="_blank" className="text-blue-600 hover:underline">
+                  <a href="https://masters.pratt.duke.edu/management/overview/" target="_blank" className="text-blue-600 hover:underline">
                     Engineering Management
                   </a>{" "}
                   at Duke, with a focus on Product Management, Innovation, and Entrepreneurship.
