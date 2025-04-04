@@ -20,10 +20,8 @@ export default function Page() {
               </div>
 
               {/* Profile Image */}
-              <div className="w-60 h-60 relative overflow-hidden">
-                <div className="absolute inset-0 m-auto" style={{
-                  clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
-                }}>
+              <div className="w-60 h-60 relative overflow-hidden rounded-full">
+                <div className="absolute inset-0 m-auto">
                   <Image
                     src="/shivansh.jpg"
                     alt="Profile photo"
