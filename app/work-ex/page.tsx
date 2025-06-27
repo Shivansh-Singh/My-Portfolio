@@ -109,7 +109,7 @@ export default function PortfolioTimeline() {
 
 const timelineItems = [
   {
-    title: "Bern – AI Teddy Bear Startup | Product Manager",
+    title: "Bern – AI Teddy Bear Startup | Product Discovery and Strategy",
     subtitle: "Product Manager",
     date: "Jan 2025 – May 2025",
     details: [
@@ -126,7 +126,7 @@ const timelineItems = [
     ]
   },
   {
-    title: "Jobz – AI Hiring Platform | Student Consultant",
+    title: "Jobz – AI Hiring Platform | Product Management",
     subtitle: "Student Consultant",
     date: "Aug 2024 – Dec 2024",
     details: [
@@ -149,7 +149,7 @@ const timelineItems = [
     ]
   },
   {
-    title: "Duke IP – Med-Tech Device | Student Consultant",
+    title: "Duke IP – Med-Tech Device | Product Management",
     subtitle: "Student Consultant",
     date: "Aug 2024 – Dec 2024",
     details: [
@@ -165,7 +165,7 @@ const timelineItems = [
     ]
   },
   {
-    title: "Deloitte India – Consultant, Cyber & Strategic Risk",
+    title: "Deloitte India – Cyber & Strategic Risk",
     subtitle: "Consultant",
     date: "Jul 2022 – Jun 2024",
     details: [
@@ -200,7 +200,7 @@ const timelineItems = [
     ]
   },
   {
-    title: "Appointy – Enterprise Sales & Product Intern",
+    title: "Appointy – Enterprise Sales & Product Management",
     subtitle: "Intern",
     date: "Sep 2020 – Dec 2020",
     website: {
@@ -214,7 +214,7 @@ const timelineItems = [
     ],
   },
   {
-    title: "Netlink Software – Business Analyst Intern",
+    title: "Netlink Software – Business Analyst",
     subtitle: "Intern",
     date: "Apr 2020 – Jul 2020",
     website: {
