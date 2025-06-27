@@ -1,17 +1,21 @@
 // project-data.ts
 export const researchProjects = [
   {
-    title: "Utilization & Management of E-Waste",
+    title: "Exploring the Influence of Hydrogen Bond Donors in Deep Eutectic Solvents on the Extraction of Metals During the Recycling Process of Lithium-Ion Batteries",
     subtitle: "B.Tech Thesis | IIT Indore | Jan 2022 - May 2022",
     image: "/projects/e-waste.jpg",
     bulletPoints: [
-      "Built an end-to-end system for recovering valuable metals from Li-ion battery waste using computer vision and eco-friendly hydrometallurgy",
-      "Engineered a CNN-based model for Li-ion battery type and size classification",
-      "Designed a hydrometallurgical process for extracting Lithium and Cobalt",
-      "Developed a basic profitability model for e-waste collection centers",
-      "Received a perfect score and faculty commendation"
+      "Co-authored a peer-reviewed study presenting a green, scalable alternative to acid-based recycling of lithium-ion batteries using deep eutectic solvents (DESs).",
+      "Investigated the role of hydrogen bond donors in enhancing leaching efficiency and selectivity for lithium and cobalt from end-of-life LIB cathodes.",
+      "Developed and optimized DES-based hydrometallurgical processes achieving up to 98% and 94% recovery for cobalt and lithium, respectively.",
+      "Characterized molecular interactions and metal extraction mechanisms using UV-vis, NMR, FTIR, and ICP-AES analyses.",
+      "Additionally explored a computer vision pipeline for automated battery type and size classification using CNNs, and designed an economic model for assessing recovery-center viability."
     ],
-    tags: ["Computer Vision", "Deep Learning", "Sustainability", "Research"]
+    tags: ["Green Chemistry", "Hydrometallurgy", "Deep Eutectic Solvents", "Computer Vision", "Research"],
+    doi: {
+      url: "https://doi.org/10.1039/d5nj01060h",
+      label: "New Journal of Chemistry, Royal Society of Chemistry, 2025"
+    }
   },
   {
     title: "Research Intern - Organisational Behavior",

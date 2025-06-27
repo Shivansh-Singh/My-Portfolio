@@ -22,14 +22,40 @@ export default function Projects() {
               key={index}
               className="bg-white dark:bg-neutral-800 shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105"
             >
-              <div className="relative aspect-[4/3] w-full">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-contain"
-                />
-              </div>
+              {/* Image with optional DOI link for research projects */}
+              {project.doi ? (
+                <>
+                  <a href={project.doi.url} target="_blank" rel="noopener noreferrer">
+                    <div className="relative aspect-[4/3] w-full cursor-pointer">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </a>
+                  <div className="px-4 pt-2 pb-0">
+                    <a
+                      href={project.doi.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-600 dark:text-blue-400 hover:underline break-all"
+                    >
+                      DOI: {project.doi.url}
+                    </a>
+                  </div>
+                </>
+              ) : (
+                <div className="relative aspect-[4/3] w-full">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              )}
               <div className="p-4">
                 <div className="mb-2">
                   <h2 className="text-xl font-semibold text-black dark:text-white">
@@ -40,9 +66,27 @@ export default function Projects() {
                   </p>
                 </div>
                 <ul className="list-disc pl-5 space-y-2 mb-4 text-neutral-700 dark:text-neutral-300">
-                  {project.bulletPoints.map((point, idx) => (
-                    <li key={idx}>{point}</li>
-                  ))}
+                  {project.bulletPoints.map((point, idx) => {
+                    const doiMatch = point.match(/(https?:\/\/doi\.org\/\S+)/);
+                    if (doiMatch) {
+                      const [before, after] = point.split(doiMatch[0]);
+                      return (
+                        <li key={idx}>
+                          {before}
+                          <a
+                            href={doiMatch[0]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline break-all"
+                          >
+                            {doiMatch[0]}
+                          </a>
+                          {after}
+                        </li>
+                      );
+                    }
+                    return <li key={idx}>{point}</li>;
+                  })}
                 </ul>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (
@@ -71,6 +115,7 @@ export default function Projects() {
               key={index}
               className="bg-white dark:bg-neutral-800 shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105"
             >
+              {/* Always render image for community projects */}
               <div className="relative aspect-[4/3] w-full">
                 <Image
                   src={project.image}
@@ -89,9 +134,27 @@ export default function Projects() {
                   </p>
                 </div>
                 <ul className="list-disc pl-5 space-y-2 mb-4 text-neutral-700 dark:text-neutral-300">
-                  {project.bulletPoints.map((point, idx) => (
-                    <li key={idx}>{point}</li>
-                  ))}
+                  {project.bulletPoints.map((point, idx) => {
+                    const doiMatch = point.match(/(https?:\/\/doi\.org\/\S+)/);
+                    if (doiMatch) {
+                      const [before, after] = point.split(doiMatch[0]);
+                      return (
+                        <li key={idx}>
+                          {before}
+                          <a
+                            href={doiMatch[0]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline break-all"
+                          >
+                            {doiMatch[0]}
+                          </a>
+                          {after}
+                        </li>
+                      );
+                    }
+                    return <li key={idx}>{point}</li>;
+                  })}
                 </ul>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (

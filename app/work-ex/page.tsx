@@ -36,6 +36,7 @@ export default function PortfolioTimeline() {
                   <p className="text-sm text-neutral-600 dark:text-neutral-400">
                     {item.subtitle}
                   </p>
+                  
                   {/* Additional points */}
                   {item.details && (
                     <ul className="list-disc pl-5 text-sm text-neutral-700 dark:text-neutral-300 space-y-1">
@@ -64,6 +65,37 @@ export default function PortfolioTimeline() {
                         )}
                       </div>
                     ))}
+                  </div>
+                )}
+
+                {/* Website Links */}
+                {item.website && (
+                  <div className="mt-4">
+                    <a 
+                      href={item.website.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block p-4 bg-white dark:bg-neutral-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow duration-200"
+                    >
+                      <div className="flex items-center gap-3">
+                        <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
+                          <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9" />
+                          </svg>
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-medium text-neutral-900 dark:text-neutral-100">
+                            Visit {item.website.name}
+                          </h4>
+                          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                            {item.website.url}
+                          </p>
+                        </div>
+                        <svg className="w-5 h-5 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </div>
+                    </a>
                   </div>
                 )}
               </div>
@@ -98,9 +130,10 @@ const timelineItems = [
     subtitle: "Student Consultant",
     date: "Aug 2024 – Dec 2024",
     details: [
-      "Conducted market research across 7+ platforms; improved acquisition by 20%",
-      "Applied user interviews and empathy mapping; boosted engagement by 25%",
-      "Built feature roadmap through JTBD and prototyping; resolved 12+ user pain points"
+      "Defined product roadmap through competitive research and 40+ user interviews across B2B and B2C segments.",
+      "Created customer personas and problem statements to align feature development with real user needs.",
+      "Refined AI matching and feedback logic using empathy mapping; projected 10% uplift in engagement.",
+      "Developed GTM strategy and positioning to drive platform adoption, contributing to a 20% increase in user acquisition."
     ],
     images: [
       {
@@ -120,9 +153,8 @@ const timelineItems = [
     subtitle: "Student Consultant",
     date: "Aug 2024 – Dec 2024",
     details: [
-      "Conducted 40+ stakeholder interviews; validated product-market fit",
+      "Led MVP development of a diagnostic med-tech device, conducting 30+ stakeholder interviews across hospitals, clinics, and patient groups",
       "Applied Lean Canvas to scope MVP (itterative prototyping); accelerated launch by 2 months",
-      "Integrated usability feedback into clinical workflows; improved onboarding experience by 20%"
     ],
     images: [
       {
@@ -171,6 +203,10 @@ const timelineItems = [
     title: "Appointy – Enterprise Sales & Product Intern",
     subtitle: "Intern",
     date: "Sep 2020 – Dec 2020",
+    website: {
+      url: "https://www.appointy.com/",
+      name: "Appointy"
+    },
     details: [
       "Translated 15+ RFPs into actionable features; increased proposal win rate by 20%",
       "Ran pricing experiments; improved client conversions by 10%",
@@ -181,9 +217,13 @@ const timelineItems = [
     title: "Netlink Software – Business Analyst Intern",
     subtitle: "Intern",
     date: "Apr 2020 – Jul 2020",
+    website: {
+      url: "https://lumenore.com/",
+      name: "Lumenore (Netlink's AI-Product)"
+    },
     details: [
-      "Conducted discovery for BFSI product; defined scope and architecture",
-      "Facilitated feature requirements and BRD creation; improved team alignment"
+      "Conducted discovery research for Lumenore (AI-Flagship Product) to define product scope and delivery roadmap.",
+      "Facilitated feature scoping and curated Product Requirements Documents (PRDs) to align cross-functional teams.",
     ],
     
   }
